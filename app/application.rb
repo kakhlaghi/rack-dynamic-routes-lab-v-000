@@ -10,7 +10,6 @@ class Application
       if item =@@items.find {|item_in| item_in.name == item_name}
         resp.write item.price
       else
-
         resp.status "400"
         resp.write "Item not found"
       end
